@@ -12,7 +12,7 @@ import axios from 'axios'
 import { toast } from "sonner"
 import { useDispatch, useSelector } from 'react-redux';
 import { Loader2 } from 'lucide-react'
-import { setLoading } from '@/redux/authSlice'
+import { setLoading, setUser } from '@/redux/authSlice'
 
 
 
@@ -59,6 +59,7 @@ const Login = () => {
                 withCredentials: true,
             });
             if (res.data.success) {
+                dispatch(setUser(res.data.user));
                 navigate("/");
                 toast.success(res.data.message);
             }
@@ -103,7 +104,7 @@ const Login = () => {
                             value={input.password}
                             name="password"
                             onChange={changeEventHandler}
-                            placeholder="susheel"
+                            placeholder="password"
                             className='my-1 '
                         />
 
