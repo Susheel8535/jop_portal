@@ -35,7 +35,7 @@ const Job = ({job}) => {
             <div className='flex items-center gap-2 my-2'>
                 <Button className='p-5 ' variant="outline" size="icon">
                     <Avatar>
-                        <AvatarImage src="https://assets.logomaker.com/sites/all/themes/logomaker/images/redesign_2023/homepage/LMK-Example-Logos_Main-08_EN.jpg" />
+                        <AvatarImage src={job?.company?.logo} />
                     </Avatar>
                 </Button>
                 <div>

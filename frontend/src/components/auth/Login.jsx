@@ -128,7 +128,7 @@ const Login = () => {
                                 <Input
                                     type="radio"
                                     name="role"
-                                    value="Recruiter"
+                                    value="recruiter"
                                     checked={input.role === 'recruiter'}
                                     onChange={changeEventHandler}
                                     className="cursor-pointer"
