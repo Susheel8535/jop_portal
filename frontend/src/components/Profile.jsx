@@ -30,7 +30,8 @@ const Profile = () => {
                 <div className="flex justify-between">
                     <div className='flex items-center gap-4'>
                         <Avatar className='h-24 w-24'>
-                            <AvatarImage src="https://assets.logomaker.com/sites/all/themes/logomaker/images/redesign_2023/homepage/LMK-Example-Logos_Main-08_EN.jpg" alt="profile" />
+                            <AvatarImage src={user?.profile?.profilePhoto}
+                            alt="profile" />
 
                         </Avatar>
                         <di>
