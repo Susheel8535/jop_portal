@@ -26,7 +26,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 
 const corsOptions = {
-    origin: 'http://localhost:5173', // ← Fixed: was 'http//localhost:5173' (missing colon)
+    origin: 'https://jobslive.netlify.app/', // ← Fixed: was 'http//localhost:5173' (missing colon)
     credentials: true // ← Fixed: was 'Credential' (wrong spelling, should be lowercase 's')
 };
 
