@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { JOB_API_END_POINT } from '@/utils/constant'
-import { setSingleJob } from '@/redux/JobSlice';
+import { setSingleJob } from '@/redux/jobSlice';
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { APPLICATION_API_END_POINT } from '../utils/constant';
